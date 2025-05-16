@@ -28,7 +28,7 @@ class ExerciseWeek1 extends StatelessWidget{
                 ),
                 const SizedBox(height: 20,),
                 const Text(
-                  'NguyenMinhTruc',
+                  'Nguyen Minh Truc - CN22D',
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class ExerciseWeek1 extends StatelessWidget{
                 ),
                 const SizedBox(height: 8,),
                 const Text(
-                  'BinhDinh, VietNam',
+                  'Qua môn học lập trình mobile',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.grey,

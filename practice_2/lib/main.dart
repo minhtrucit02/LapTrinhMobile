@@ -1,8 +1,5 @@
-import 'package:ex_week1/Ex_Week1/ExerciseWeek1.dart';
-import 'package:ex_week1/Practice_2/Practice2.dart';
 import 'package:flutter/material.dart';
-
-import 'Ex_Week2/ExerciseWeek2.dart';
+import 'package:practice_2/practice_2/Practice_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,9 +11,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Exercise Moblie',
-      home: Practice2(),
-    );
+    return MaterialApp(title: 'Flutter Demo', home: Practice2());
   }
 }
