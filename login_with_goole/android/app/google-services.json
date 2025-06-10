@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "981966173698",
+    "firebase_url": "https://luyentap-e9166-default-rtdb.firebaseio.com",
+    "project_id": "luyentap-e9166",
+    "storage_bucket": "luyentap-e9166.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981966173698:android:3aad4974592bfeceb3d91b",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981966173698-evtbka1lsn9jk4du6td651eilsbjvptd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjAm1ksX6kUY9PAoahifeJVT6t4bb5z7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981966173698-evtbka1lsn9jk4du6td651eilsbjvptd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "981966173698-ql554q16nlp9q6fjvbu580us196htd51.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebase"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981966173698:android:50d361d196c88e16b3d91b",
+        "android_client_info": {
+          "package_name": "com.example.login_with_goole"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981966173698-8b2h8fpju8pu3jbvodr8o5b6mutpbmnn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.login_with_goole",
+            "certificate_hash": "882da27d3425e93f880c7355248a5772fa0c2f65"
+          }
+        },
+        {
+          "client_id": "981966173698-evtbka1lsn9jk4du6td651eilsbjvptd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjAm1ksX6kUY9PAoahifeJVT6t4bb5z7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981966173698-evtbka1lsn9jk4du6td651eilsbjvptd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "981966173698-ql554q16nlp9q6fjvbu580us196htd51.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebase"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981966173698:android:c67564c8bf117921b3d91b",
+        "android_client_info": {
+          "package_name": "com.example.luyentap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981966173698-s8nh11njfijlldc8529kqpl9a4rftji0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.luyentap",
+            "certificate_hash": "882da27d3425e93f880c7355248a5772fa0c2f65"
+          }
+        },
+        {
+          "client_id": "981966173698-evtbka1lsn9jk4du6td651eilsbjvptd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjAm1ksX6kUY9PAoahifeJVT6t4bb5z7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981966173698-evtbka1lsn9jk4du6td651eilsbjvptd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "981966173698-ql554q16nlp9q6fjvbu580us196htd51.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
