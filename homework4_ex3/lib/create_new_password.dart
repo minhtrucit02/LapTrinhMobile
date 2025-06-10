@@ -3,19 +3,63 @@ import 'package:homework4_ex3/components/button_component.dart';
 import 'package:homework4_ex3/components/component.dart';
 import 'package:homework4_ex3/confirm.dart';
 
-class CreateNewPassword extends StatelessWidget {
-  const CreateNewPassword({super.key, required this.email, required this.code});
+class CreateNewPassword extends StatefulWidget {
+  const CreateNewPassword({
+    super.key,
+    required this.email,
+    required this.code,
+  });
+
   final String email;
   final String code;
 
   @override
+  State<CreateNewPassword> createState() => _CreateNewPasswordState();
+}
+
+class _CreateNewPasswordState extends State<CreateNewPassword> {
+  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController confirmPasswordController = TextEditingController();
+
+  @override
+  void dispose() {
+    passwordController.dispose();
+    confirmPasswordController.dispose();
+    super.dispose();
+  }
+
+  void _onNext() {
+    final password = passwordController.text.trim();
+    final confirmPassword = confirmPasswordController.text.trim();
+
+    if (password != confirmPassword) {
+      _showMessage('Passwords do not match');
+      return;
+    }
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => Confirm(
+          email: widget.email,
+          code: widget.code,
+          password: password,
+        ),
+      ),
+    );
+  }
+
+  void _showMessage(String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(message)),
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final TextEditingController passwordController = TextEditingController();
-    final TextEditingController confirmPasswordController =
-        TextEditingController();
     final title = 'Create New Password';
-    final description =
-        'Your new password must be different form previously user password';
+    final description = 'Your new password must be different from previously used password.';
+
     return Scaffold(
       body: Column(
         children: [
@@ -27,17 +71,17 @@ class CreateNewPassword extends StatelessWidget {
                 TextField(
                   controller: passwordController,
                   obscureText: true,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: "Password",
                     prefixIcon: Icon(Icons.lock),
                     border: OutlineInputBorder(),
                   ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 TextField(
                   controller: confirmPasswordController,
                   obscureText: true,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: "Confirm Password",
                     prefixIcon: Icon(Icons.lock_outline),
                     border: OutlineInputBorder(),
@@ -48,21 +92,9 @@ class CreateNewPassword extends StatelessWidget {
           ),
           ButtonComponent(
             buttonTitle: 'Next',
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder:
-                      (context) => Confirm(
-                        email: email,
-                        code: code,
-                        password: passwordController.text,
-                      ),
-                ),
-              );
-            },
+            onTap: _onNext,
           ),
-          Spacer(),
+          const Spacer(),
         ],
       ),
     );
