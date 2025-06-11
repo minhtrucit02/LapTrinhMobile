@@ -33,8 +33,11 @@ class _LoginScreenState extends State<LoginScreen> {
 
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const ProfileScreen()),
+        MaterialPageRoute(
+          builder: (context) => const ProfileScreen(),
+        ),
       );
+
     } catch (e) {
       print("Sign in failed: $e");
       ScaffoldMessenger.of(context).showSnackBar(
