@@ -44,6 +44,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
           }
 
           final product = snapshot.data!;
+          print(product.imgURL);
           return SafeArea(
             child: Padding(
               padding: const EdgeInsets.all(16.0),
@@ -84,11 +85,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                     ),
                   ),
                   const SizedBox(height: 20),
-                  Container(
-                    color: Colors.grey[300],
-                    child:                   Text(product.des),
-
-                  ),
+                  Container(color: Colors.grey[300], child: Text(product.des)),
                 ],
               ),
             ),
